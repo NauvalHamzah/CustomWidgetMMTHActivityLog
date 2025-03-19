@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>cadit-mmth-activity-log demo</title>
+
+    <script
+      type="module"
+      src="../node_modules/ptcs-style-unit/ptcs-style-unit.js"
+    ></script>
+    <script
+      type="module"
+      src="../node_modules/ptcs-base-theme/ptcs-multi-theme.js"
+    ></script>
+
+    <script type="module" src="../src/cadit-mmth-activity-log.js"></script>
+
+    <script type="module">
+      import "@polymer/iron-demo-helpers/demo-pages-shared-styles";
+      import "@polymer/iron-demo-helpers/demo-snippet";
+    </script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles"></style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic cadit-mmth-activity-log demo</h3>
+      <demo-snippet>
+        <template>
+          <cadit-mmth-activity-log></cadit-mmth-activity-log>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "",
+    "parts": [
+      {
+        "part": "",
+        "states": [
+          {
+            "state": "",
+            "styles": {
+              "background": "${global-color-bg-primary}"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

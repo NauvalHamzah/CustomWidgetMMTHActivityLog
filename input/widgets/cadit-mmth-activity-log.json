@@ -1,0 +1,48 @@
+{
+  "elementName": "cadit-mmth-activity-log",
+  "htmlImports": [
+    {
+      "from": "npm",
+      "id": "cadit-mmth-activity-log",
+      "version": "file:cadit-mmth-activity-log",
+      "url": "cadit-mmth-activity-log/cadit-mmth-activity-log.js"
+    }
+  ],
+  "flags": {
+    "name": "Cadit MMTH Activity Log",
+    "description": "Custom widget for Cadit MMTH Activity Log"
+  },
+  "properties": {
+    "CustomClass": {
+      "baseType": "STRING",
+      "description": "Custom class for the element",
+      "isBindingSource": true
+    },
+    "Source": {
+      "baseType": "STRING",
+      "description": "Source property example",
+      "isBindingSource": true,
+      "defaultValue": "default-source",
+      "src": "source"
+    },
+    "Target": {
+      "baseType": "STRING",
+      "description": "Target property example",
+      "isBindingTarget": true,
+      "defaultValue": "default-target",
+      "src": "target"
+    }
+  },
+  "events": {
+    "SourceChanged": {
+      "description": "Emitted when the Source property is changed",
+      "src": "source-changed"
+    }
+  },
+  "services": {
+    "LogSource": {
+      "description": "Log the Source property to console",
+      "src": "logSource"
+    }
+  }
+}
