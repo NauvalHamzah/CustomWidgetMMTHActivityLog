@@ -1,0 +1,86 @@
+{
+  "elementName": "cadit-mmth-activity-log",
+  "htmlImports": [
+    {
+      "from": "npm",
+      "id": "cadit-mmth-activity-log",
+      "version": "file:cadit-mmth-activity-log",
+      "url": "cadit-mmth-activity-log/cadit-mmth-activity-log.js"
+    }
+  ],
+  "flags": {
+    "name": "Cadit MMTH Activity Log",
+    "description": "Custom widget for Cadit MMTH Activity Log"
+  },
+  "properties": {
+    "CustomClass": {
+      "baseType": "STRING",
+      "description": "Custom class for the element",
+      "isBindingSource": true
+    },
+    "AllData": {
+      "baseType": "INFOTABLE",
+      "description": "Data of activity log",
+      "isBindingTarget": true,
+      "src": "allData",
+      "defaultValue": [
+        {
+            "dateString": "Friday, 21 March 2025",
+            "project": "AIF",
+            "activityDescFull": "Added new rows to the database for the new project phase.",
+            "activityDesc": "Added new rows for the new project phase.",
+            "activityItem": "Database Update",
+            "activityTypeDesc": "Add Row",
+            "timeString": "08:00",
+            "activityIcon": "MMTH.SCM.UI.ActivityLog.AddRow.Media",
+            "id": 0,
+            "activityType": "Add Row",
+            "department": "ABC",
+            "timestamp": 1742534400000,
+            "username": "fulan"
+        }
+      ]
+    },
+    "TableView": {
+      "baseType": "BOOLEAN",
+      "description": "Toggle view, table or accordion",
+      "isBindingTarget": true,
+      "defaultValue": false,
+      "src": "isTable"
+    },
+    "AscendingOrder": {
+      "baseType": "BOOLEAN",
+      "description": "Order of data based on time",
+      "isBindingTarget": true,
+      "isBindingSource": true,
+      "defaultValue": false,
+      "src": "isAsc"
+    },
+    "DataPerPage": {
+      "baseType": "NUMBER",
+      "description": "Number of rows shown in table per page",
+      "isBindingTarget": true,
+      "defaultValue": 10,
+      "src": "dataPerPage"
+    },
+    "SearchQuery": {
+      "baseType": "STRING",
+      "description": "Value of search box",
+      "isBindingTarget": true,
+      "defaultValue": "",
+      "src": "searchQuery"
+    },
+    "ProjectSelection": {
+      "baseType": "STRING",
+      "description": "Selected Project",
+      "isBindingTarget": true,
+      "defaultValue": "",
+      "src": "selectedProject"
+    }
+  },
+  "events": {
+  },
+  "services": {
+
+  }
+}

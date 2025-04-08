@@ -1,0 +1,16 @@
+Raw data paling awal ada di GetActivityLogData.json, kolomnya
+{
+        "dateString": "Friday, 21 March 2025",
+        "project": "MRP",
+        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+        "activityItem": "blablabla",
+        "activityTypeDesc": "Delete Scenario",
+        "timeString": "13:08",
+        "activityIcon": "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+        "id": 0,
+        "activityType": "DeleteScenario",
+        "department": "ABC",
+        "timestamp": 1742537318356,
+        "username": "fulan"
+}

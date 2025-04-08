@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>cadit-mmth-activity-log demo</title>
+
+    <script
+      type="module"
+      src="../node_modules/ptcs-style-unit/ptcs-style-unit.js"
+    ></script>
+    <script
+      type="module"
+      src="../node_modules/ptcs-base-theme/ptcs-multi-theme.js"
+    ></script>
+
+    <script type="module" src="../src/cadit-mmth-activity-log.js"></script>
+
+    <script type="module">
+      import "@polymer/iron-demo-helpers/demo-pages-shared-styles";
+      import "@polymer/iron-demo-helpers/demo-snippet";
+    </script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles"></style>
+    </custom-style>
+  </head>
+  <body>
+      <div style="background-image: url('../src/assets/background-shadow.svg');">
+        <input id="search-query"></input>
+        <cadit-mmth-activity-log id="cadit-mmth-activity-log"></cadit-mmth-activity-log>
+      </div>
+  </body>
+  <script>
+    const component = document.getElementById("cadit-mmth-activity-log")
+    document.getElementById("search-query").addEventListener("input", function() {
+        component.searchQuery = this.value;
+    });
+    component.isTable = true;
+    component.isAsc = false;
+    component.dataPerPage = 6;
+    component.selectedProject = "";
+    component.allData = [
+    {
+        dateString: "Friday, 21 March 2025",
+        project: "AIF",
+        activityDescFull: "Added new rows to the database for the new project phase.",
+        activityDesc: "Added new rows for the new project phase.",
+        activityItem: "Database Update",
+        activityTypeDesc: "Add Row",
+        timeString: "08:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.AddRow.Media",
+        id: 0,
+        activityType: "Add Row",
+        department: "ABC",
+        timestamp: 1742534400000,
+        username: "fulan"
+    },
+    {
+        dateString: "Friday, 21 March 2025",
+        project: "ASTL",
+        activityDescFull: "Approved the latest scenario for project completion.",
+        activityDesc: "Approved the latest scenario.",
+        activityItem: "Approval Process",
+        activityTypeDesc: "Approve Scenario",
+        timeString: "09:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.ApproveScenario.Media",
+        id: 1,
+        activityType: "Approve Scenario",
+        department: "XYZ",
+        timestamp: 1742537400000,
+        username: "susan"
+    },
+    {
+        dateString: "Saturday, 22 March 2025",
+        project: "MPT",
+        activityDescFull: "Created new project scenario based on updated requirements.",
+        activityDesc: "Created new project scenario.",
+        activityItem: "Scenario Creation",
+        activityTypeDesc: "Create Scenario",
+        timeString: "10:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+        id: 2,
+        activityType: "Create Scenario",
+        department: "XYZ",
+        timestamp: 1742623200000,
+        username: "john"
+    },
+    {
+        dateString: "Saturday, 22 March 2025",
+        project: "MRP",
+        activityDescFull: "Deleted old data rows that are no longer needed.",
+        activityDesc: "Deleted outdated data rows.",
+        activityItem: "Data Cleanup",
+        activityTypeDesc: "Delete Row",
+        timeString: "11:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.DeleteRow.Media",
+        id: 3,
+        activityType: "Delete Row",
+        department: "ABC",
+        timestamp: 1742626800000,
+        username: "alice"
+    },
+    {
+        dateString: "Sunday, 23 March 2025",
+        project: "YCS",
+        activityDescFull: "Deleted obsolete scenario from the system.",
+        activityDesc: "Deleted obsolete scenario.",
+        activityItem: "System Cleanup",
+        activityTypeDesc: "Delete Scenario",
+        timeString: "12:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+        id: 4,
+        activityType: "Delete Scenario",
+        department: "ABC",
+        timestamp: 1742719200000,
+        username: "bob"
+    },
+    {
+        dateString: "Monday, 24 March 2025",
+        project: "AIF",
+        activityDescFull: "Created new period for the upcoming fiscal year.",
+        activityDesc: "Created new fiscal period.",
+        activityItem: "Period Creation",
+        activityTypeDesc: "New Period",
+        timeString: "08:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+        id: 5,
+        activityType: "New Period",
+        department: "ABC",
+        timestamp: 1742806200000,
+        username: "susan"
+    },
+    {
+        dateString: "Monday, 24 March 2025",
+        project: "ASTL",
+        activityDescFull: "Rejected a scenario that didn’t meet the necessary criteria.",
+        activityDesc: "Rejected a non-compliant scenario.",
+        activityItem: "Scenario Review",
+        activityTypeDesc: "Reject Scenario",
+        timeString: "14:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.RejectScenario.Media",
+        id: 6,
+        activityType: "Reject Scenario",
+        department: "XYZ",
+        timestamp: 1742818800000,
+        username: "alice"
+    },
+    {
+        dateString: "Tuesday, 25 March 2025",
+        project: "MPT",
+        activityDescFull: "Updated system configurations to match the new requirements.",
+        activityDesc: "Updated system configurations.",
+        activityItem: "System Update",
+        activityTypeDesc: "Update Scenario",
+        timeString: "09:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.UpdateScenario.Media",
+        id: 7,
+        activityType: "Update Scenario",
+        department: "ABC",
+        timestamp: 1742905200000,
+        username: "bob"
+    },
+    {
+        dateString: "Tuesday, 25 March 2025",
+        project: "MRP",
+        activityDescFull: "Added a new row to the database for project expansion.",
+        activityDesc: "Added new row for expansion.",
+        activityItem: "Database Update",
+        activityTypeDesc: "Add Row",
+        timeString: "10:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.AddRow.Media",
+        id: 8,
+        activityType: "Add Row",
+        department: "XYZ",
+        timestamp: 1742909800000,
+        username: "susan"
+    },
+    {
+        dateString: "Wednesday, 26 March 2025",
+        project: "YCS",
+        activityDescFull: "Reviewed and approved the final scenario.",
+        activityDesc: "Approved final scenario.",
+        activityItem: "Approval Process",
+        activityTypeDesc: "Approve Scenario",
+        timeString: "11:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.ApproveScenario.Media",
+        id: 9,
+        activityType: "Approve Scenario",
+        department: "ABC",
+        timestamp: 1742983800000,
+        username: "alice"
+    },
+    {
+        dateString: "Thursday, 27 March 2025",
+        project: "ASTL",
+        activityDescFull: "Created new scenario for the project team based on latest feedback.",
+        activityDesc: "Created new project scenario.",
+        activityItem: "Scenario Creation",
+        activityTypeDesc: "Create Scenario",
+        timeString: "08:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+        id: 10,
+        activityType: "Create Scenario",
+        department: "XYZ",
+        timestamp: 1743072000000,
+        username: "john"
+    },
+    {
+        dateString: "Thursday, 27 March 2025",
+        project: "MPT",
+        activityDescFull: "Deleted old system configurations that were no longer needed.",
+        activityDesc: "Deleted obsolete configurations.",
+        activityItem: "System Cleanup",
+        activityTypeDesc: "Delete Scenario",
+        timeString: "13:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+        id: 11,
+        activityType: "Delete Scenario",
+        department: "ABC",
+        timestamp: 1743075600000,
+        username: "bob"
+    },
+    {
+        dateString: "Friday, 28 March 2025",
+        project: "YCS",
+        activityDescFull: "Added new rows for upcoming project data.",
+        activityDesc: "Added new rows for project.",
+        activityItem: "Database Update",
+        activityTypeDesc: "Add Row",
+        timeString: "09:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.AddRow.Media",
+        id: 12,
+        activityType: "Add Row",
+        department: "ABC",
+        timestamp: 1743161400000,
+        username: "susan"
+    },
+    {
+        dateString: "Saturday, 29 March 2025",
+        project: "ASTL",
+        activityDescFull: "Approved the latest update for the project scenario.",
+        activityDesc: "Approved project scenario update.",
+        activityItem: "Approval Process",
+        activityTypeDesc: "Approve Scenario",
+        timeString: "10:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.ApproveScenario.Media",
+        id: 13,
+        activityType: "Approve Scenario",
+        department: "XYZ",
+        timestamp: 1743247800000,
+        username: "john"
+    },
+    {
+        dateString: "Saturday, 29 March 2025",
+        project: "MPT",
+        activityDescFull: "Updated the timeline for the project based on the latest decisions.",
+        activityDesc: "Updated project timeline.",
+        activityItem: "Timeline Update",
+        activityTypeDesc: "Update Scenario",
+        timeString: "12:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.UpdateScenario.Media",
+        id: 14,
+        activityType: "Update Scenario",
+        department: "ABC",
+        timestamp: 1743251400000,
+        username: "alice"
+    },
+    {
+        dateString: "Sunday, 30 March 2025",
+        project: "MRP",
+        activityDescFull: "Created a new scenario for the MRP system to handle upcoming requirements.",
+        activityDesc: "Created a new MRP scenario.",
+        activityItem: "Scenario Creation",
+        activityTypeDesc: "Create Scenario",
+        timeString: "13:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+        id: 15,
+        activityType: "Create Scenario",
+        department: "XYZ",
+        timestamp: 1743337800000,
+        username: "bob"
+    },
+    {
+        dateString: "Monday, 31 March 2025",
+        project: "YCS",
+        activityDescFull: "Deleted outdated scenarios from the YCS project.",
+        activityDesc: "Deleted obsolete YCS scenarios.",
+        activityItem: "System Cleanup",
+        activityTypeDesc: "Delete Scenario",
+        timeString: "08:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+        id: 16,
+        activityType: "Delete Scenario",
+        department: "ABC",
+        timestamp: 1743424200000,
+        username: "alice"
+    },
+    {
+        dateString: "Monday, 31 March 2025",
+        project: "AIF",
+        activityDescFull: "Approved the final update for the project phase.",
+        activityDesc: "Approved project phase update.",
+        activityItem: "Approval Process",
+        activityTypeDesc: "Approve Scenario",
+        timeString: "14:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.ApproveScenario.Media",
+        id: 17,
+        activityType: "Approve Scenario",
+        department: "XYZ",
+        timestamp: 1743427800000,
+        username: "john"
+    },
+    {
+        dateString: "Tuesday, 1 April 2025",
+        project: "ASTL",
+        activityDescFull: "Added new rows for the ASTL project update.",
+        activityDesc: "Added new rows for update.",
+        activityItem: "Database Update",
+        activityTypeDesc: "Add Row",
+        timeString: "09:00",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.AddRow.Media",
+        id: 18,
+        activityType: "Add Row",
+        department: "ABC",
+        timestamp: 1743510000000,
+        username: "alice"
+    },
+    {
+        dateString: "Tuesday, 1 April 2025",
+        project: "MPT",
+        activityDescFull: "Created new period for MPT system based on updated requirements.",
+        activityDesc: "Created new MPT period.",
+        activityItem: "Period Creation",
+        activityTypeDesc: "New Period",
+        timeString: "10:30",
+        activityIcon: "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+        id: 19,
+        activityType: "New Period",
+        department: "XYZ",
+        timestamp: 1743514800000,
+        username: "susan"
+    }
+];
+  </script>
+</html>

@@ -1,0 +1,1481 @@
+{
+    "rows": [
+        {
+            "date": 1742538956178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Friday, 21 March 2025",
+                        "project": "YCS",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 0,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742538956178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Friday, 21 March 2025",
+            "id": 1,
+            "state": true,
+            "items": 1,
+            "height": 196
+        },
+        {
+            "date": 1742452556178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Thursday, 20 March 2025",
+                        "project": "AIF",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 1,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742452556178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Thursday, 20 March 2025",
+                        "project": "AIF",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 2,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742452556178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Thursday, 20 March 2025",
+            "id": 2,
+            "state": true,
+            "items": 2,
+            "height": 316
+        },
+        {
+            "date": 1742366156178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Wednesday, 19 March 2025",
+                        "project": "AIF",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Delete Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+                        "id": 3,
+                        "activityType": "DeleteScenario",
+                        "department": "ABC",
+                        "timestamp": 1742366156178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Wednesday, 19 March 2025",
+                        "project": "YCS",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Delete Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+                        "id": 4,
+                        "activityType": "DeleteScenario",
+                        "department": "ABC",
+                        "timestamp": 1742366156178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Wednesday, 19 March 2025",
+                        "project": "YCS",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 5,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742366156178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Wednesday, 19 March 2025",
+            "id": 3,
+            "state": true,
+            "items": 3,
+            "height": 436
+        },
+        {
+            "date": 1742279756178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Tuesday, 18 March 2025",
+                        "project": "YCS",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Delete Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+                        "id": 6,
+                        "activityType": "DeleteScenario",
+                        "department": "ABC",
+                        "timestamp": 1742279756178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Tuesday, 18 March 2025",
+                        "project": "ASTL",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "New Period of Data Set",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+                        "id": 7,
+                        "activityType": "NewPeriod",
+                        "department": "ABC",
+                        "timestamp": 1742279756178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Tuesday, 18 March 2025",
+                        "project": "ASTL",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Delete Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+                        "id": 8,
+                        "activityType": "DeleteScenario",
+                        "department": "ABC",
+                        "timestamp": 1742279756178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Tuesday, 18 March 2025",
+                        "project": "MRP",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "New Period of Data Set",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+                        "id": 9,
+                        "activityType": "NewPeriod",
+                        "department": "ABC",
+                        "timestamp": 1742279756178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Tuesday, 18 March 2025",
+            "id": 4,
+            "state": true,
+            "items": 4,
+            "height": 556
+        },
+        {
+            "date": 1742193356178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Monday, 17 March 2025",
+                        "project": "AIF",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 10,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742193356178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Monday, 17 March 2025",
+                        "project": "MRP",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 11,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742193356178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Monday, 17 March 2025",
+                        "project": "YCS",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "New Period of Data Set",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+                        "id": 12,
+                        "activityType": "NewPeriod",
+                        "department": "ABC",
+                        "timestamp": 1742193356178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Monday, 17 March 2025",
+                        "project": "ASTL",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "New Period of Data Set",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+                        "id": 13,
+                        "activityType": "NewPeriod",
+                        "department": "ABC",
+                        "timestamp": 1742193356178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Monday, 17 March 2025",
+                        "project": "MRP",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 14,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742193356178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Monday, 17 March 2025",
+            "id": 5,
+            "state": true,
+            "items": 5,
+            "height": 676
+        },
+        {
+            "date": 1742106956178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Sunday, 16 March 2025",
+                        "project": "YCS",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 15,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742106956178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Sunday, 16 March 2025",
+                        "project": "MRP",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 16,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742106956178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Sunday, 16 March 2025",
+                        "project": "AIF",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Delete Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+                        "id": 17,
+                        "activityType": "DeleteScenario",
+                        "department": "ABC",
+                        "timestamp": 1742106956178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Sunday, 16 March 2025",
+                        "project": "YCS",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "New Period of Data Set",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+                        "id": 18,
+                        "activityType": "NewPeriod",
+                        "department": "ABC",
+                        "timestamp": 1742106956178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Sunday, 16 March 2025",
+                        "project": "MRP",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "New Period of Data Set",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.NewPeriod.Media",
+                        "id": 19,
+                        "activityType": "NewPeriod",
+                        "department": "ABC",
+                        "timestamp": 1742106956178,
+                        "username": "fulan"
+                    },
+                    {
+                        "dateString": "Sunday, 16 March 2025",
+                        "project": "AIF",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 20,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742106956178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Sunday, 16 March 2025",
+            "id": 6,
+            "state": true,
+            "items": 6,
+            "height": 796
+        },
+        {
+            "date": 1742020556178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Saturday, 15 March 2025",
+                        "project": "MRP",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Create Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.CreateScenario.Media",
+                        "id": 21,
+                        "activityType": "CreateScenario",
+                        "department": "ABC",
+                        "timestamp": 1742020556178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Saturday, 15 March 2025",
+            "id": 7,
+            "state": true,
+            "items": 1,
+            "height": 196
+        },
+        {
+            "date": 1741934156178,
+            "logData": {
+                "rows": [
+                    {
+                        "dateString": "Friday, 14 March 2025",
+                        "project": "ASTL",
+                        "activityDescFull": "blablabla is blablabla blabla blablablaablas afajfwa",
+                        "activityDesc": "is blablabla blabla blablablaablas afajfwa",
+                        "activityItem": "blablabla",
+                        "activityTypeDesc": "Delete Scenario",
+                        "timeString": "13:35",
+                        "activityIcon": "MMTH.SCM.UI.ActivityLog.DeleteScenario.Media",
+                        "id": 22,
+                        "activityType": "DeleteScenario",
+                        "department": "ABC",
+                        "timestamp": 1741934156178,
+                        "username": "fulan"
+                    }
+                ],
+                "dataShape": {
+                    "fieldDefinitions": {
+                        "dateString": {
+                            "name": "dateString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 4
+                        },
+                        "project": {
+                            "name": "project",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 5
+                        },
+                        "activityDescFull": {
+                            "name": "activityDescFull",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 10
+                        },
+                        "activityDesc": {
+                            "name": "activityDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 9
+                        },
+                        "activityItem": {
+                            "name": "activityItem",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 8
+                        },
+                        "activityTypeDesc": {
+                            "name": "activityTypeDesc",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 6
+                        },
+                        "timeString": {
+                            "name": "timeString",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 3
+                        },
+                        "activityIcon": {
+                            "name": "activityIcon",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "IMAGELINK",
+                            "ordinal": 13
+                        },
+                        "id": {
+                            "name": "id",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "INTEGER",
+                            "ordinal": 1
+                        },
+                        "activityType": {
+                            "name": "activityType",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 7
+                        },
+                        "department": {
+                            "name": "department",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 12
+                        },
+                        "timestamp": {
+                            "name": "timestamp",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "DATETIME",
+                            "ordinal": 2
+                        },
+                        "username": {
+                            "name": "username",
+                            "aspects": {
+                                "isPrimaryKey": false
+                            },
+                            "description": "",
+                            "baseType": "STRING",
+                            "ordinal": 11
+                        }
+                    }
+                }
+            },
+            "dateString": "Friday, 14 March 2025",
+            "id": 8,
+            "state": true,
+            "items": 1,
+            "height": 196
+        }
+    ],
+    "dataShape": {
+        "fieldDefinitions": {
+            "date": {
+                "name": "date",
+                "aspects": {
+                    "isPrimaryKey": false
+                },
+                "description": "",
+                "baseType": "DATETIME",
+                "ordinal": 2
+            },
+            "logData": {
+                "name": "logData",
+                "aspects": {
+                    "isPrimaryKey": false,
+                    "dataShape": "MMTH.SCM.MasterModule.LogData.DataShape"
+                },
+                "description": "",
+                "baseType": "INFOTABLE",
+                "ordinal": 7
+            },
+            "dateString": {
+                "name": "dateString",
+                "aspects": {
+                    "isPrimaryKey": false
+                },
+                "description": "",
+                "baseType": "STRING",
+                "ordinal": 3
+            },
+            "id": {
+                "name": "id",
+                "aspects": {
+                    "isPrimaryKey": false
+                },
+                "description": "",
+                "baseType": "INTEGER",
+                "ordinal": 1
+            },
+            "state": {
+                "name": "state",
+                "aspects": {
+                    "isPrimaryKey": false
+                },
+                "description": "",
+                "baseType": "BOOLEAN",
+                "ordinal": 6
+            },
+            "items": {
+                "name": "items",
+                "aspects": {
+                    "isPrimaryKey": false
+                },
+                "description": "",
+                "baseType": "INTEGER",
+                "ordinal": 4
+            },
+            "height": {
+                "name": "height",
+                "aspects": {
+                    "isPrimaryKey": false
+                },
+                "description": "",
+                "baseType": "INTEGER",
+                "ordinal": 5
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "cadit-mmth-activity-log",
+  "version": "1.0.27",
+  "description": "Custom widget for Cadit MMTH Activity Log",
+  "main": "cadit-mmth-activity-log.js",
+  "vendor": "CAD-IT IoT Centre",
+  "icon": "cadit-icon.png",
+  "scripts": {
+    "build": "tw-widget build",
+    "dev": "polymer serve --open . --browser chrome"
+  },
+  "dependencies": {
+    "ptcs-library": "file:.cadit/twx-wc-sdk/ptcs-library"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.1.0"
+  },
+  "deployOnBuild": true,
+  "thingworxInstance": {
+    "host": "192.168.7.32",
+    "port": 8080,
+    "appKey": "39015c7b-50e7-4d3d-973b-5dcb2e87cd95"
+  },
+  "excludes": []
+}
