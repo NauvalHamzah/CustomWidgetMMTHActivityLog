@@ -35,21 +35,19 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     }
 
     .accordion-group {
-      margin-bottom: 16px
+      margin-bottom: 28px
     }
 
     .accordion-header {
-      height: 44px;
+      height: 42px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0px;
-      cursor: pointer;
       border-radius: 8px;
-      border: solid 0.5px;
+      border: solid 1px;
       background-repeat: no-repeat;
       background-size: cover;
-      margin-bottom: 20px;
     }
 
     .calendar-icon {
@@ -63,6 +61,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       color: white;
       font-size: 18px;
       flex-grow: 1;
+      font-weight: 600;
     }
 
     .accordion-button {
@@ -79,30 +78,39 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     }
 
     .accordion-panel {
-      height: 160px;
+      min-height: 120px;
+      height: auto;
       display: flex;
       flex-direction: row;
       padding: 0px;
       background: transparent;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-top: 5px;
+      margin: 12px 0;
     }
 
     .container-activity-icon {
       width: 48px;
-      height: 100%;
       display: flex;
       flex-direction: column;
+      height: 120px;
     }
 
     .upper-container-activity-icon {
       height: 48px;
+      display: flex;
       align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .activity-icon {
+      height: 44px;
+      width: 44px;
     }
 
     .lower-container-activity-icon {
-      height: 100%;
+      flex-grow: 1;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -126,13 +134,13 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       background-color: #343434;
       border: solid 1px #414141;
       border-radius: 8px;
-      margin-left: 16px;
+      margin: 0 0 12px 16px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
       color: white;
-      padding-bottom: 10px;
+      padding-bottom: 12px;
     }
 
     .upper-container-activity-info {
@@ -145,10 +153,18 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     }
 
     .project-label {
-      margin-right: 8px; 
       background-color: #c0c0c0;
       padding: 5px;
       border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .time-string {
+      font-weight: 600;
+    }
+
+    .activity-label {
+      font-weight: 600;
     }
 
     .YCS {
@@ -167,8 +183,10 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       background-color: #FF6A42;   
     }
 
-    .activity-label {
-      margin-right: 8px; 
+    .dot {
+      display: inline-block;
+      width: 34px;
+      text-align: center;
     }
 
     .lower-container-activity-info {
@@ -177,6 +195,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       justify-content: flex-start;
       align-items: center;
       width: 100%;
+      min-height: 54px;
     }
 
     .user-icon {
@@ -185,7 +204,18 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     }
 
     .user-info {
-      width: 230px;
+      min-width: 230px;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-right: 5px;
+    }
+
+    .user-info h3 {
+      margin: 0px;
+      font-weight: 600;
+      font-size: 16px;
     }
 
     .activity-box {
@@ -197,16 +227,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       border-radius: 6px;
       margin-right: 16px;
       font-size: 18px;
-      padding: 10px;
-    }
-
-    .activity-item{
-      color: #4ba7bf;
-      margin-right: 24px;
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 15px;
     }
 
     .activity-desc{
@@ -214,6 +235,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       display: flex;
       justify-content: center;
       align-items: center;
+      font-weight: 600;
     }
     `;
   }
@@ -308,7 +330,6 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
 
   updated(changedProperties) {
     if (changedProperties.has('searchQuery')) {
-      console.log(this.searchQuery)
       this.requestUpdate()
     }
   }
@@ -338,7 +359,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
                 <div class="accordion-panel">
                   <div class="container-activity-icon">
                     <div class="upper-container-activity-icon">
-                        <img class="activity-icon" src='${this.getAssetPath(panel.activityIcon+".PNG")}' />
+                        <img class="activity-icon" src='${this.getAssetPath(panel.activityIcon+".png")}' style="height:44px, width:44px;" />
                     </div>
                     <div class="lower-container-activity-icon">
                         <div class="lower-container-activity-icon-side"></div>
@@ -349,19 +370,17 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
                   <div class="container-activity-info">
                     <div class="upper-container-activity-info">
                       <span class="project-label ${panel.project}">${panel.project}</span>
-                      <span class="activity-label"> • ${panel.activityType}</span>
-                      <span> • ${panel.timeString}</span>
+                      <span class="dot"><b>•</b></span>
+                      <span class="activity-label">${panel.activityType}</span>
+                      <span class="dot"><b>•</b></span>
+                      <span class="time-string">${panel.timeString}</span>
                     </div>
                     <div class="lower-container-activity-info">
                       <img class="user-icon" src='${this.getAssetPath("MMTH.SCM.UI.UserIcon.PNG")}'/>
                       <div class="user-info">
                         <h3>${panel.username}</h3>
-                        <h3 style="color:#a8b2b9;">${panel.department}</h3>
                       </div>
                       <div class="activity-box">
-                        <div class="activity-item">
-                          <span>${panel.activityItem}</span>
-                        </div>
                         <div class="activity-desc">
                           <span>${panel.activityDesc}</span>
                         </div>

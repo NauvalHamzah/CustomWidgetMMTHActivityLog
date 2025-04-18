@@ -236,8 +236,7 @@ export class WidgetTemplate extends PTCS.BehaviorTabindex(
       isTable: { type: Boolean },
       isAsc: { type: Boolean },
       dataPerPage: { type: Number },
-      searchQuery: { type: String },
-      selectedProject: { type: String }
+      searchQuery: { type: String }
     };
   }
 
@@ -278,40 +277,69 @@ export class WidgetTemplate extends PTCS.BehaviorTabindex(
     this.dataPerPage = 4;
     this.searchQuery = "";
     this.widgetTemplateIs = WidgetTemplate.is;
-    this.selectedProject = "";
   }
 
   filterData() {
     const query = this.searchQuery.toLowerCase();
     return this.allData.filter(item => {
-      const keysToSearch = ['dateString', 'project', 'activityDescFull', 'activityDesc', 'activityItem', 'activityTypeDesc', 'timeString', 'department', 'username'];
+      const keysToSearch = ['project', 'activityDesc', 'activityType', 'username'];
       const matchesSearchQuery = keysToSearch.some(key => item[key].toLowerCase().includes(query));
-      
-      const matchesProject = !this.selectedProject || item.project === this.selectedProject;
-  
-      return matchesSearchQuery && matchesProject;
+        
+      return matchesSearchQuery
     });
   }
 
-  initialization(){
-    const filteredData = this.filterData()
-
-    this.isAsc ? this.sortedData = filteredData.sort((a, b) => a.timestamp - b.timestamp) :
-    this.sortedData = filteredData.sort((a, b) => b.timestamp - a.timestamp);
-    console.log(filteredData)
+  initialization() {
+    const filteredData = this.filterData();
+  
+    this.sortedData = this.isAsc
+      ? filteredData.sort((a, b) => a.timestamp - b.timestamp)
+      : filteredData.sort((a, b) => b.timestamp - a.timestamp);
+  
+    this.sortedData = this.sortedData.map(item => {
+      const date = new Date(item.timestamp);
+  
+      const weekday = date.toLocaleDateString('en-US', { weekday: 'long' }); 
+      const day = date.getDate(); 
+      const month = date.toLocaleDateString('en-US', { month: 'long' });
+      const year = date.getFullYear(); 
+  
+      const dateString = `${weekday}, ${day} ${month} ${year}`;
+  
+      const timeString = date.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      }); 
+  
+      return {
+        ...item,
+        dateString,
+        timeString
+      };
+    });
+  
   }
 
   updateChildProperties() {
     const accordion = this.shadowRoot.querySelector('cadit-mmth-activity-log-accordion');
-    const table = this.shadowRoot.querySelector('cadit-mmth-activity-log-accordion')
-    if (accordion || table) {
+    const table = this.shadowRoot.querySelector('cadit-mmth-activity-log-table')
+    if (accordion) {
       accordion.sortedData = this.sortedData;
+    } else if(table) {
       table.sortedData = this.sortedData;
     }
   }
 
   handleSearchQueryChange(event) {
-    this.searchQuery = event.target.value; // Update search query
+    this.searchQuery = event.target.value; 
+  }
+
+  updated(changedProps) {
+    if (changedProps.has('isTable') || changedProps.has('searchQuery') || changedProps.has('allData') || changedProps.has('isAsc')) {
+      this.initialization();
+      this.updateChildProperties();
+    }
   }
 
   /**
@@ -321,8 +349,6 @@ export class WidgetTemplate extends PTCS.BehaviorTabindex(
    * @return {html} The rendered HTML content.
    */
   render() {
-    this.initialization()
-    this.updateChildProperties()
     return html`
       ${this.isTable?  
         html`<cadit-mmth-activity-log-table 
@@ -330,9 +356,7 @@ export class WidgetTemplate extends PTCS.BehaviorTabindex(
                 .sortedData=${this.sortedData} 
                 .dataPerPage=${this.dataPerPage} 
                 .searchQuery=${this.searchQuery}
-                .selectedProject=${this.selectedProject}
                 .widgetTemplateIs=${this.widgetTemplateIs}
-                .tableMaxHeight=${this.tableMaxHeight}>
              </cadit-mmth-activity-log-table>` :
         html`<cadit-mmth-activity-log-accordion 
                 .sortedData=${this.sortedData}

@@ -34,7 +34,6 @@ export class TableElement extends PTCS.BehaviorTabindex(
     }
     .table-container {
       width: 100%;
-      max-height: 85vh; 
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -50,6 +49,7 @@ export class TableElement extends PTCS.BehaviorTabindex(
       z-index: 2;
       background-size: cover;
       background-position: center;
+      height: 60px
     }
     table {
       width: 100%;
@@ -91,7 +91,7 @@ export class TableElement extends PTCS.BehaviorTabindex(
       margin: 0 12px; 
       color: #2d2d2d; 
       font-size: 16px;
-      width: 150px;
+      min-width: 150px;
     }
     .footer-gap {
       width: 100%;
@@ -301,9 +301,8 @@ export class TableElement extends PTCS.BehaviorTabindex(
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
     const seconds = String(date.getSeconds()).padStart(2, '0');
-    const milliseconds = String(date.getMilliseconds()).padStart(3, '0');
 
-    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}.${milliseconds}`;
+    return `${month}/${day}/${year} ${hours}:${minutes}`;
   }
 
   updated(changedProperties) {
@@ -326,41 +325,25 @@ export class TableElement extends PTCS.BehaviorTabindex(
     <div class="table-container" part="table-container">
       <div class="table-wrapper">
         <table>
-          <thead style="background-image: url('${this.getAssetPath("header-image-primary-wider.png")}')">
+          <thead style="background-image: url('${this.getAssetPath("header-image-primary-wider.png")}'); height: 48px;">
             <tr>
-              <th></th>
-              <th>id</th>
-              <th>timestamp</th>
-              <th>timeString</th>
-              <th>dateString</th>
-              <th>project</th>
-              <th>activityDescType</th>
-              <th>activityType</th>
-              <th>activityItem</th>
-              <th>activityDesc</th>
-              <th>activityFullDesc</th>
-              <th>username</th>
-              <th>department</th>
-              <th>activityIcon</th>
+              <th style="width:2%"></th>
+              <th style="width:14%; text-align:left;">Created at</th>
+              <th style="width:20%; text-align:left;">Activity Type</th>
+              <th style="width:35%; text-align:left;">Activity Description</th>
+              <th style="width:15%; text-align:center;">Modified by</th>
+              <th style="width:14%; text-align:center;">Project</th>
             </tr>
           </thead>
           <tbody>
             ${paginatedData.map((item, index) => html`
               <tr>
-                <td>${this.offset + index + 1}</td>
-                <td>${item.id}</td>
-                <td>${this.formatTimestamp(item.timestamp)}</td>
-                <td>${item.timeString}</td>
-                <td>${item.dateString}</td>
-                <td>${item.project}</td>
-                <td>${item.activityTypeDesc}</td>
-                <td>${item.activityType}</td>
-                <td>${item.activityItem}</td>
-                <td>${item.activityDesc}</td>
-                <td>${item.activityDescFull}</td>
-                <td>${item.username}</td>
-                <td>${item.department}</td>
-                <td><img src='${this.getAssetPath(item.activityIcon + ".PNG")}'/></td>
+                <td style="width:2%"></td>
+                <td style="width:14%;">${this.formatTimestamp(item.timestamp)}</td>
+                <td style="width:20%;">${item.activityType}</td>
+                <td style="width:35%;">${item.activityDesc}</td>
+                <td style="width:15%; text-align:center;">${item.username}</td>
+                <td style="width:14%; text-align:center;">${item.project}</td>
               </tr>
             `)}
           </tbody>

@@ -25,19 +25,12 @@
       "src": "allData",
       "defaultValue": [
         {
-            "dateString": "Friday, 21 March 2025",
-            "project": "AIF",
-            "activityDescFull": "Added new rows to the database for the new project phase.",
-            "activityDesc": "Added new rows for the new project phase.",
-            "activityItem": "Database Update",
-            "activityTypeDesc": "Add Row",
-            "timeString": "08:00",
-            "activityIcon": "MMTH.SCM.UI.ActivityLog.AddRow.Media",
-            "id": 0,
-            "activityType": "Add Row",
-            "department": "ABC",
-            "timestamp": 1742534400000,
-            "username": "fulan"
+          "project": "AIF",
+          "activityDesc": "Added new rows for the new project phase.",
+          "activityIcon": "Create",
+          "activityType": "Add Row",
+          "timestamp": 1742534400000,
+          "username": "fulan"
         }
       ]
     },
@@ -69,13 +62,6 @@
       "isBindingTarget": true,
       "defaultValue": "",
       "src": "searchQuery"
-    },
-    "ProjectSelection": {
-      "baseType": "STRING",
-      "description": "Selected Project",
-      "isBindingTarget": true,
-      "defaultValue": "",
-      "src": "selectedProject"
     }
   },
   "events": {
