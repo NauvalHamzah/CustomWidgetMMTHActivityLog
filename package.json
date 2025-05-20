@@ -1,6 +1,6 @@
 {
   "name": "cadit-mmth-activity-log",
-  "version": "1.0.39",
+  "version": "1.0.43",
   "description": "Custom widget for Cadit MMTH Activity Log",
   "main": "cadit-mmth-activity-log.js",
   "vendor": "CAD-IT IoT Centre",

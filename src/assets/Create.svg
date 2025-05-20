@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="create" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #31b996;
+      }
+    </style>
+  </defs>
+  <circle class="cls-2" cx="22" cy="22" r="22"/>
+  <path class="cls-1" d="M28.7,13.5h-13.4c-.99,0-1.8.81-1.8,1.8v13.4c0,.99.81,1.8,1.8,1.8h13.4c.99,0,1.8-.81,1.8-1.8v-13.4c0-.99-.81-1.8-1.8-1.8ZM26.27,22.76h-3.51v3.51h-1.52v-3.51h-3.51v-1.52h3.51v-3.51h1.52v3.51h3.51v1.52Z"/>
+</svg>

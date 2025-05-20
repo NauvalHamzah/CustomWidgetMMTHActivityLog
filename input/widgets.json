@@ -1,7 +1,7 @@
 {
   "description": "Custom widget for Cadit MMTH Activity Log",
   "extensionName": "cadit-mmth-activity-log-extension",
-  "version": "1.0.39",
+  "version": "1.0.43",
   "htmlImports": [],
   "components": [
     "import!cadit-mmth-activity-log.json"

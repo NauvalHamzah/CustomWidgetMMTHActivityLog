@@ -22,11 +22,11 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     PTCS.BehaviorFocus(PTCS.BehaviorStyleable(L2Pw(LitElement)))
   )
 ) {
-   /**
-   * Returns the CSS styles for the component.
-   *
-   * @return {import("lit").CSSResult} The CSS styles for the component.
-   */
+  /**
+  * Returns the CSS styles for the component.
+  *
+  * @return {import("lit").CSSResult} The CSS styles for the component.
+  */
   static get styles() {
     return css`
     .accordion-container {
@@ -75,6 +75,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       justify-content: flex-start;
       cursor: pointer;
       margin-left: auto;
+      margin-right: 10px;
     }
 
     .accordion-panel {
@@ -210,6 +211,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       flex-direction: column;
       justify-content: center;
       margin-right: 5px;
+      flex-shrink: 0
     }
 
     .user-info h3 {
@@ -228,6 +230,11 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
       margin-right: 16px;
       font-size: 18px;
       padding: 15px;
+      flex-wrap: wrap;
+      word-break: break-word;
+      flex: 1 1 100%;
+      word-break: break-word;
+      white-space: normal;
     }
 
     .activity-desc{
@@ -249,7 +256,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     return {
       sortedData: { type: Object },
       searchQuery: { type: String },
-      widgetTemplateIs: { type: String }  
+      widgetTemplateIs: { type: String }
     };
   }
 
@@ -276,11 +283,11 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     return `../extensions/${this.widgetTemplateIs}/assets/${filename}`;
   }
 
-   /**
-   * Initializes a new instance of the class.
-   *
-   * @constructor
-   */
+  /**
+  * Initializes a new instance of the class.
+  *
+  * @constructor
+  */
   constructor() {
     super();
     this.sortedData = [];
@@ -300,7 +307,7 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     }
 
     for (let i = 0; i < dayList.length; i++) {
-      let groupedData ={
+      let groupedData = {
         dayString: dayList[i],
         panelData: this.sortedData.filter(item => item.dateString === dayList[i])
       }
@@ -311,29 +318,68 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
 
     this.shadowRoot.querySelectorAll(".accordion-panel").forEach((panel) => {
       panel.style.display = "flex";
-    });  
-  } 
+    });
+  }
 
   toggleAccordion(event) {
-    const button = event.target;
-    const group = button.closest(".accordion-group"); 
-    const panels = group.querySelectorAll(".accordion-panel"); 
+    // Get the button that was clicked
+    const button = event.target.closest('.accordion-button'); // Find the closest button
   
+    if (!button) {
+      console.error('Button not found!');
+      return;
+    }
+  
+    // Find the accordion group that this button belongs to
+    const group = button.closest(".accordion-group");
+  
+    if (!group) {
+      console.error('Accordion group not found!');
+      return;
+    }
+  
+    // Get all the panels in this group
+    const panels = group.querySelectorAll(".accordion-panel");
+  
+    // Check if any panels are open
     const isOpen = [...panels].some(panel => panel.style.display !== "none");
   
+    // Toggle visibility of the panels
     panels.forEach(panel => {
       panel.style.display = isOpen ? "none" : "flex";
     });
   
-    button.innerHTML = isOpen ? "&#10095;" : "&#10094;";
+    // Find the icon (SVG path) within the button
+    const icon = button.querySelector('.accordion-icon');
+  
+    if (!icon) {
+      console.error('Accordion icon not found!');
+      return;
+    }
+  
+    const path = icon.querySelector('path');
+    if (!path) {
+      console.error('Icon path not found!');
+      return;
+    }
+  
+    // Toggle the SVG path based on the accordion state
+    if (isOpen) {
+      // Change to "down" chevron when the accordion is closed
+      path.setAttribute('d', 'M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z');  // Down chevron (expanded state)
+    } else {
+      // Change to "up" chevron when the accordion is open
+      path.setAttribute('d', 'M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z');  // Up chevron (collapsed state)
+    }
   }
+  
 
   updated(changedProperties) {
     if (changedProperties.has('searchQuery')) {
       this.requestUpdate()
     }
   }
-  
+
 
   /**
    * Renders the HTML content for the component.
@@ -346,20 +392,23 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
     return html`
       <div class="accordion-container">
         ${this.dataPerDay.map(
-          (item) => html`
+      (item) => html`
             <div class="accordion-group">
               <div class="accordion-header" style="background-image: url('${this.getAssetPath("header-image-primary-wider.png")}');">
                 <img class="calendar-icon" src='${this.getAssetPath("MMTH.SCM.UI.CalendarIcon.PNG")}'/>
                 <span class="header-date">${item.dayString}</span>
                 <button class="accordion-button" @click="${this.toggleAccordion}">
-                  &#10094
+                  <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                    <path fill="white" d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/>
+                  </svg>
                 </button>
               </div>
+
               ${item.panelData.map((panel) => html`
                 <div class="accordion-panel">
                   <div class="container-activity-icon">
                     <div class="upper-container-activity-icon">
-                        <img class="activity-icon" src='${this.getAssetPath(panel.activityIcon+".png")}' style="height:44px, width:44px;" />
+                        <img class="activity-icon" src='${this.getAssetPath(panel.activityIcon + ".svg")}' style="height:44px, width:44px;" />
                     </div>
                     <div class="lower-container-activity-icon">
                         <div class="lower-container-activity-icon-side"></div>
@@ -389,10 +438,10 @@ export class AccordionElement extends PTCS.BehaviorTabindex(
                   </div>
                 </div>
                 `
-              )}  
+      )}  
             </div>
           `
-        )}
+    )}
       </div>
     `;
   }
